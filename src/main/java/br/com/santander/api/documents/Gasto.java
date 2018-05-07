@@ -13,6 +13,15 @@ public class Gasto {
 	private String valor;
 	private String codigousuario;
 	private String data;
+	private Categorizacao categorizacao;
+
+	public Categorizacao getCategorizacao() {
+		return categorizacao;
+	}
+
+	public void setCategorizacao(Categorizacao categorizacao) {
+		this.categorizacao = categorizacao;
+	}
 
 	public Gasto() {
 	}
@@ -60,5 +69,4 @@ public class Gasto {
 	public void setData(String data) {
 		this.data = data;
 	}
-
 }

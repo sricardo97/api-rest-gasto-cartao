@@ -7,6 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import br.com.santander.api.Application;
+import br.com.santander.api.documents.Categorizacao;
 import br.com.santander.api.documents.Gasto;
 import br.com.santander.api.services.GastoService;
 
@@ -20,9 +21,12 @@ public class ApplicationTest {
 	public void cadastraGasto() {
 		Gasto gasto = new Gasto();
 		gasto.setDescricao("Santander");
-		gasto.setValor("505,00");
-		gasto.setCodigousuario("");
-		gasto.setData("19/04/2017");
+		gasto.setValor("1.000,00");
+		gasto.setCodigousuario("5");
+		gasto.setData("31/04/2017");
+		//Categorizacao categorizacao = new Categorizacao();
+		//categorizacao.setDescricao("Roupa");
+		//gasto.setCategorizacao(categorizacao);
 		this.gastoService.cadastrar(gasto);
 	}
 }
